@@ -1,6 +1,7 @@
 package com.ideacode.arca;
 
 import com.ideacode.arca.resource.AcraResource;
+import com.ideacode.arca.resource.DeviceResource;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -17,6 +18,7 @@ public class JerseyConfig extends ResourceConfig {
 
     public JerseyConfig() {
         register(AcraResource.class);
+        register(DeviceResource.class);
         register(CorsFilter.class);
     }
 

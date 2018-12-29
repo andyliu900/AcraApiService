@@ -8,13 +8,13 @@ import javax.persistence.*;
 /**
  * 崩溃信息数据库表
  *
- * Created by randysu on 2018/11/28.
+ * Created by randysu on 2018/12/13.
  */
 
 @Entity
-@Table(name = "t_crash")
+@Table(name = "t_crash_test")
 @Data
-public class CrashEntity {
+public class CrashTestEntity {
 
     @Id
     @GeneratedValue
@@ -229,7 +229,7 @@ public class CrashEntity {
 
     @Override
     public String toString() {
-        return "CrashEntity [id=" + id + ", KEY=" + KEY + ", ANDROID_VERSION=" + ANDROID_VERSION
+        return "TestCrashModel [id=" + id + ", KEY=" + KEY + ", ANDROID_VERSION=" + ANDROID_VERSION
                 + ", APP_VERSION_CODE=" + APP_VERSION_CODE
                 + ", APP_VERSION_NAME=" + APP_VERSION_NAME
                 + ", AVAILABLE_MEM_SIZE=" + AVAILABLE_MEM_SIZE + ", BRAND="
@@ -241,4 +241,5 @@ public class CrashEntity {
                 + ", CPU_ABI2=" + CPU_ABI2 + ", FINGERPRINT=" + FINGERPRINT
                 + "]";
     }
+
 }

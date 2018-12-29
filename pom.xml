@@ -7,7 +7,7 @@
     <groupId>arca.service</groupId>
     <artifactId>arca-service</artifactId>
     <packaging>jar</packaging>
-    <version>1.0</version>
+    <version>1.3</version>
     <name>arca-service</name>
     <description>arca-service project for Spring Boot</description>
 
